@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Itmo.ObjectOrientedProgramming.Lab4.Core.Models.FileSystemModel.Nodes;
 using Itmo.ObjectOrientedProgramming.Lab4.Core.Models.FileSystemModel.Visitors;
 
@@ -5,19 +7,22 @@ namespace Itmo.ObjectOrientedProgramming.Lab4.Presentation.Outputs.TreeOperation
 
 public class TreeVisitor : IFileSystemVisitor
 {
-    private const string Space = " ";
-    private const string FileIcon = "[File]";
-    private const string FolderIcon = "[Folder]";
+    private readonly TreeViewSettings _settings;
     private int _depth;
+
+    public TreeVisitor(TreeViewSettings? settings = null)
+    {
+        _settings = settings ?? TreeViewSettings.Default;
+    }
 
     public void Visit(FileNode file)
     {
-        PrintWithSpace($"{FileIcon} {file.Name}");
+        PrintWithSpace($"{_settings.FileIcon} {file.Name}");
     }
 
     public void Visit(DirectoryNode directory)
     {
-        PrintWithSpace($"{FolderIcon} {directory.Name}");
+        PrintWithSpace($"{_settings.FolderIcon} {directory.Name}");
 
         _depth++;
         foreach (INode component in directory.Nodes)
@@ -30,7 +35,7 @@ public class TreeVisitor : IFileSystemVisitor
 
     private void PrintWithSpace(string text)
     {
-        string space = string.Concat(Enumerable.Repeat(Space, _depth));
+        string space = string.Concat(Enumerable.Repeat(_settings.IndentationSymbol, _depth));
         Console.WriteLine($"{space}{text}");
     }
 }

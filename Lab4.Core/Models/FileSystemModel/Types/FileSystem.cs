@@ -13,7 +13,7 @@ public class FileSystem : IFileSystem
 
     public FileSystem(string rootPath)
     {
-        _navigator = new PathManager();
+        _navigator = new PathManager(rootPath);
         _workingDirectory = new FilePath(rootPath);
     }
 
