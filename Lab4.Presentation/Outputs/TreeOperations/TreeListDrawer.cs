@@ -6,9 +6,16 @@ namespace Itmo.ObjectOrientedProgramming.Lab4.Presentation.Outputs.TreeOperation
 
 public class TreeListDrawer : ICommandResultVisitor
 {
+    private readonly TreeViewSettings _settings;
+
+    public TreeListDrawer(TreeViewSettings? settings = null)
+    {
+        _settings = settings ?? TreeViewSettings.Default;
+    }
+
     public void Visit(CommandResult.Success result)
     {
-        var treeVisitor = new TreeVisitor();
+        var treeVisitor = new TreeVisitor(_settings);
         if (result.Payload is DirectoryNode root)
         {
             root.Apply(treeVisitor);
