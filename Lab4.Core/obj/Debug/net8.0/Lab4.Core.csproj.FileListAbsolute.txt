@@ -1,0 +1,11 @@
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\bin\Debug\net8.0\Lab4.Core.deps.json
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\bin\Debug\net8.0\Lab4.Core.dll
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\bin\Debug\net8.0\Lab4.Core.pdb
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.AssemblyInfoInputs.cache
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.AssemblyInfo.cs
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.dll
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\refint\Lab4.Core.dll
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\Lab4.Core.pdb
+C:\Users\Илья\Desktop\LABMASHA\Lab4.Core\obj\Debug\net8.0\ref\Lab4.Core.dll
